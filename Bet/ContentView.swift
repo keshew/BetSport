@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Bet
-//
-//  Created by Артём Коротков on 25.09.2025.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -20,5 +13,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    RootTabView()
 }

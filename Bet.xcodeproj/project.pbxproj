@@ -6,8 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		86616B0D2E857000007380BC /* BetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B002E857000007380BC /* BetApp.swift */; };
+		86616B0E2E857000007380BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B012E857000007380BC /* ContentView.swift */; };
+		86616B0F2E857000007380BC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B022E857000007380BC /* Models.swift */; };
+		86616B102E857000007380BC /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B082E857000007380BC /* RootTabView.swift */; };
+		86616B112E857000007380BC /* EventsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B092E857000007380BC /* EventsFeedView.swift */; };
+		86616B122E857000007380BC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B0A2E857000007380BC /* ProfileView.swift */; };
+		86616B132E857000007380BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86616B0C2E857000007380BC /* Assets.xcassets */; };
+		86616B142E857000007380BC /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B0B2E857000007380BC /* LeaderboardView.swift */; };
+		86616B152E857000007380BC /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B032E857000007380BC /* AuthService.swift */; };
+		86616B162E857000007380BC /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B042E857000007380BC /* EventService.swift */; };
+		86616B172E857000007380BC /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B052E857000007380BC /* NotificationService.swift */; };
+		86616B182E857000007380BC /* PredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B062E857000007380BC /* PredictionService.swift */; };
+		86616B192E857000007380BC /* ShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86616B072E857000007380BC /* ShareService.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		86616AC32E856F0B007380BC /* Bet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86616B002E857000007380BC /* BetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BetApp.swift; path = Bet/BetApp.swift; sourceTree = SOURCE_ROOT; };
+		86616B012E857000007380BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Bet/ContentView.swift; sourceTree = SOURCE_ROOT; };
+		86616B022E857000007380BC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = Bet/Models/Models.swift; sourceTree = SOURCE_ROOT; };
+		86616B032E857000007380BC /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = Bet/Services/AuthService.swift; sourceTree = SOURCE_ROOT; };
+		86616B042E857000007380BC /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventService.swift; path = Bet/Services/EventService.swift; sourceTree = SOURCE_ROOT; };
+		86616B052E857000007380BC /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationService.swift; path = Bet/Services/NotificationService.swift; sourceTree = SOURCE_ROOT; };
+		86616B062E857000007380BC /* PredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PredictionService.swift; path = Bet/Services/PredictionService.swift; sourceTree = SOURCE_ROOT; };
+		86616B072E857000007380BC /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShareService.swift; path = Bet/Services/ShareService.swift; sourceTree = SOURCE_ROOT; };
+		86616B082E857000007380BC /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootTabView.swift; path = Bet/UI/RootTabView.swift; sourceTree = SOURCE_ROOT; };
+		86616B092E857000007380BC /* EventsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventsFeedView.swift; path = Bet/UI/Events/EventsFeedView.swift; sourceTree = SOURCE_ROOT; };
+		86616B0A2E857000007380BC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = Bet/UI/Profile/ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		86616B0B2E857000007380BC /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeaderboardView.swift; path = Bet/UI/Leaderboard/LeaderboardView.swift; sourceTree = SOURCE_ROOT; };
+		86616B0C2E857000007380BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Bet/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -34,6 +63,7 @@
 			children = (
 				86616AC52E856F0B007380BC /* Bet */,
 				86616AC42E856F0B007380BC /* Products */,
+				86616B122E857499007380BC /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +73,26 @@
 				86616AC32E856F0B007380BC /* Bet.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		86616B122E857499007380BC /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				86616B002E857000007380BC /* BetApp.swift */,
+				86616B012E857000007380BC /* ContentView.swift */,
+				86616B022E857000007380BC /* Models.swift */,
+				86616B082E857000007380BC /* RootTabView.swift */,
+				86616B092E857000007380BC /* EventsFeedView.swift */,
+				86616B0A2E857000007380BC /* ProfileView.swift */,
+				86616B0B2E857000007380BC /* LeaderboardView.swift */,
+				86616B032E857000007380BC /* AuthService.swift */,
+				86616B042E857000007380BC /* EventService.swift */,
+				86616B052E857000007380BC /* NotificationService.swift */,
+				86616B062E857000007380BC /* PredictionService.swift */,
+				86616B072E857000007380BC /* ShareService.swift */,
+				86616B0C2E857000007380BC /* Assets.xcassets */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86616B132E857000007380BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +170,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86616B0D2E857000007380BC /* BetApp.swift in Sources */,
+				86616B0E2E857000007380BC /* ContentView.swift in Sources */,
+				86616B0F2E857000007380BC /* Models.swift in Sources */,
+				86616B102E857000007380BC /* RootTabView.swift in Sources */,
+				86616B112E857000007380BC /* EventsFeedView.swift in Sources */,
+				86616B122E857000007380BC /* ProfileView.swift in Sources */,
+				86616B142E857000007380BC /* LeaderboardView.swift in Sources */,
+				86616B152E857000007380BC /* AuthService.swift in Sources */,
+				86616B162E857000007380BC /* EventService.swift in Sources */,
+				86616B172E857000007380BC /* NotificationService.swift in Sources */,
+				86616B182E857000007380BC /* PredictionService.swift in Sources */,
+				86616B192E857000007380BC /* ShareService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bet/Preview Content\"";
-				DEVELOPMENT_TEAM = 59WWFG63NN;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -281,7 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bet/Preview Content\"";
-				DEVELOPMENT_TEAM = 59WWFG63NN;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
