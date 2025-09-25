@@ -66,6 +66,32 @@ final class EventService: EventProviding {
             return (teams[index % teams.count], teams[(index + 1) % teams.count])
         }
     }
+
+    // Maintain a rolling list of events: remove finished with resolved outcomes and append new ones in the future
+    func maintainRollingSchedule(targetCount: Int = 12, spacingMinutes: Int = 5) {
+        guard var events = loadCachedEvents() else { return }
+        let now = Date()
+        // remove events that have started and have an outcome (completed)
+        events.removeAll { $0.hasStarted && $0.outcome != nil }
+
+        // determine last planned start
+        let lastStart = events.map { $0.startDate }.max() ?? now
+        var nextStart = max(now.addingTimeInterval(TimeInterval(spacingMinutes * 60)), lastStart.addingTimeInterval(TimeInterval(spacingMinutes * 60)))
+
+        var idx = 0
+        while events.count < targetCount {
+            let sport = [SportType.football, .basketball, .tennis, .hockey][idx % 4]
+            let (home, away) = realTeams(for: sport, index: idx)
+            let newEvent = Event(id: UUID().uuidString, sport: sport, homeTeam: home, awayTeam: away, startDate: nextStart, outcome: nil)
+            events.append(newEvent)
+            nextStart = nextStart.addingTimeInterval(TimeInterval(spacingMinutes * 60))
+            idx += 1
+        }
+
+        // keep sorted and save
+        events.sort { $0.startDate < $1.startDate }
+        saveCachedEvents(events)
+    }
 }
 
 

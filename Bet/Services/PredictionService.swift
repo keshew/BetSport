@@ -39,6 +39,16 @@ final class PredictionService {
         UserDefaults.standard.integer(forKey: pointsKey)
     }
 
+    @discardableResult
+    func spendPoints(_ points: Int) -> Bool {
+        guard points > 0 else { return false }
+        let current = UserDefaults.standard.integer(forKey: pointsKey)
+        guard current >= points else { return false }
+        UserDefaults.standard.set(current - points, forKey: pointsKey)
+        NotificationCenter.default.post(name: .predictionsUpdated, object: nil)
+        return true
+    }
+
     // Resolve outcomes when events start and award points
     func resolveEventsAndAwardPoints() {
         guard var events = loadCachedEvents() else { return }

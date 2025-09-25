@@ -15,6 +15,12 @@ struct RootTabView: View {
                     Text("Leaders")
                 }
 
+            TournamentsView()
+                .tabItem {
+                    Image(systemName: "trophy")
+                    Text("Tournaments")
+                }
+
             ProfileView()
                 .tabItem {
                     Image(systemName: "person.crop.circle")

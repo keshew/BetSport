@@ -55,6 +55,8 @@ final class EventsViewModel: ObservableObject {
             self.now = Date()
             // When an event starts, resolve outcomes and refresh points
             PredictionService.shared.resolveEventsAndAwardPoints()
+            // Maintain rolling schedule to keep list populated
+            (self.eventProvider as? EventService)?.maintainRollingSchedule()
             // Refresh events from cache without re-generating
             if let updated = self.loadCachedEvents() {
                 self.events = updated
