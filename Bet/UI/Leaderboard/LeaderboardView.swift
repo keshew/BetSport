@@ -54,7 +54,7 @@ struct LeaderboardView: View {
                         .font(.headline)
                 }
             }
-            .navigationTitle("Лидеры")
+            .navigationTitle("Leaders")
         }
         .onAppear { viewModel.load() }
     }

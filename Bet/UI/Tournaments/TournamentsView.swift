@@ -87,7 +87,8 @@ final class TournamentsViewModel: ObservableObject {
 
 struct TournamentsView: View {
     @StateObject private var viewModel = TournamentsViewModel()
-
+    @State private var showAlert = false
+    
     var body: some View {
         NavigationView {
             List(viewModel.tournaments) { t in
@@ -100,7 +101,12 @@ struct TournamentsView: View {
                         statusView(for: t)
                     }
                     Spacer()
-                    Button(action: { _ = viewModel.join(t) }) {
+                    Button(action: {
+                        let joined = viewModel.join(t)
+                        if !joined {
+                            showAlert = true
+                        }
+                    }) {
                         Text(viewModel.joinedIds.contains(t.id) ? "Joined" : "Join")
                     }
                     .buttonStyle(.borderedProminent)
@@ -115,6 +121,11 @@ struct TournamentsView: View {
                         .foregroundColor(.secondary)
                 }
             }
+            .alert("Insufficient Coins", isPresented: $showAlert) {
+                        Button("OK", role: .cancel) { }
+                    } message: {
+                        Text("You don't have enough coins to join this tournament.")
+                    }
         }
     }
 
