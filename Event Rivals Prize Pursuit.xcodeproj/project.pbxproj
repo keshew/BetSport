@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		86616AC32E856F0B007380BC /* Bet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86616AC32E856F0B007380BC /* Event Rivals Prize Pursuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Event Rivals Prize Pursuit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86616B002E857000007380BC /* BetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BetApp.swift; path = Bet/BetApp.swift; sourceTree = SOURCE_ROOT; };
 		86616B012E857000007380BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Bet/ContentView.swift; sourceTree = SOURCE_ROOT; };
 		86616B022E857000007380BC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = Bet/Models/Models.swift; sourceTree = SOURCE_ROOT; };
@@ -70,7 +70,7 @@
 		86616AC42E856F0B007380BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				86616AC32E856F0B007380BC /* Bet.app */,
+				86616AC32E856F0B007380BC /* Event Rivals Prize Pursuit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		86616AC22E856F0B007380BC /* Bet */ = {
+		86616AC22E856F0B007380BC /* Event Rivals Prize Pursuit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86616AD12E856F0C007380BC /* Build configuration list for PBXNativeTarget "Bet" */;
+			buildConfigurationList = 86616AD12E856F0C007380BC /* Build configuration list for PBXNativeTarget "Event Rivals Prize Pursuit" */;
 			buildPhases = (
 				86616ABF2E856F0B007380BC /* Sources */,
 				86616AC02E856F0B007380BC /* Frameworks */,
@@ -113,11 +113,11 @@
 			fileSystemSynchronizedGroups = (
 				86616AC52E856F0B007380BC /* Bet */,
 			);
-			name = Bet;
+			name = "Event Rivals Prize Pursuit";
 			packageProductDependencies = (
 			);
 			productName = Bet;
-			productReference = 86616AC32E856F0B007380BC /* Bet.app */;
+			productReference = 86616AC32E856F0B007380BC /* Event Rivals Prize Pursuit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 86616ABE2E856F0B007380BC /* Build configuration list for PBXProject "Bet" */;
+			buildConfigurationList = 86616ABE2E856F0B007380BC /* Build configuration list for PBXProject "Event Rivals Prize Pursuit" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -149,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				86616AC22E856F0B007380BC /* Bet */,
+				86616AC22E856F0B007380BC /* Event Rivals Prize Pursuit */,
 			);
 		};
 /* End PBXProject section */
@@ -318,6 +318,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Event Rivals: Prize Pursuit";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -330,6 +331,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Bet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,6 +352,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Event Rivals: Prize Pursuit";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -359,6 +365,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Bet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -368,7 +378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		86616ABE2E856F0B007380BC /* Build configuration list for PBXProject "Bet" */ = {
+		86616ABE2E856F0B007380BC /* Build configuration list for PBXProject "Event Rivals Prize Pursuit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86616ACF2E856F0C007380BC /* Debug */,
@@ -377,7 +387,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86616AD12E856F0C007380BC /* Build configuration list for PBXNativeTarget "Bet" */ = {
+		86616AD12E856F0C007380BC /* Build configuration list for PBXNativeTarget "Event Rivals Prize Pursuit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86616AD22E856F0C007380BC /* Debug */,
